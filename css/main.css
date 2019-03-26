@@ -1,8 +1,4 @@
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box; }
-
+@import url("https://fonts.googleapis.com/css?family=Lato:400,700");
 .wrapper {
   background-image: url(../img/first-bg.jpg);
   background-size: cover;
@@ -79,20 +75,6 @@
   color: #ffffff;
   text-transform: uppercase;
   padding-bottom: 60px; }
-
-.btn-cover {
-  width: 240px;
-  height: 65px;
-  border: none;
-  border-radius: 4px;
-  background-color: #fed136;
-  font-family: 'Arial';
-  font-weight: 700;
-  font-size: 18px;
-  text-transform: uppercase;
-  color: #484543;
-  cursor: pointer;
-  padding: 5px 10px; }
 
 .services {
   padding-top: 120px; }
@@ -222,6 +204,77 @@
 .portfolio-image {
   margin: 0 auto; }
 
+.btn {
+  max-width: 200px;
+  width: 100%;
+  height: 40px;
+  border: none;
+  border-radius: 4px;
+  background-color: #fed136;
+  font-family: 'Arial';
+  font-weight: 700;
+  font-size: 14px;
+  text-transform: uppercase;
+  color: #484543;
+  cursor: pointer;
+  padding: 5px 10px; }
+  .btn--large {
+    max-width: 240px;
+    height: 65px;
+    font-size: 18px; }
+
+.modal-window {
+  background: rgba(0, 0, 0, 0.3);
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  align-items: center;
+  justify-content: center;
+  display: none; }
+  .modal-window__container {
+    background: #fff;
+    max-width: 600px;
+    width: 90%;
+    min-height: 500px;
+    max-height: 90%;
+    border-radius: 4px;
+    position: relative; }
+  .modal-window__content {
+    padding: 50px 25px 25px 25px; }
+  .modal-window--active {
+    display: flex; }
+  .modal-window__close {
+    color: #000;
+    position: absolute;
+    margin-top: 0;
+    margin-left: 0;
+    width: 21px;
+    height: 21px;
+    right: 20px;
+    top: 20px;
+    cursor: pointer; }
+    .modal-window__close:before {
+      content: '';
+      position: absolute;
+      top: 10px;
+      width: 21px;
+      height: 1px;
+      background-color: currentColor;
+      transform: rotate(-45deg); }
+    .modal-window__close:after {
+      content: '';
+      position: absolute;
+      top: 10px;
+      width: 21px;
+      height: 1px;
+      background-color: currentColor;
+      transform: rotate(45deg); }
+
+.modal-open {
+  overflow: hidden; }
+
 .nav-bar {
   padding: 0 15px;
   position: relative; }
@@ -274,5 +327,14 @@
       .nav-bar__hamburger--active .nav-bar__hamburger-line--third {
         transform: rotate(-45deg);
         top: 0; } }
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box; }
+
+body {
+  background: blue;
+  font-family: 'Lato', sans-serif; }
 
 /*# sourceMappingURL=main.css.map */
